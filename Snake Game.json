@@ -1108,6 +1108,26 @@
         "name": "Checked2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/slowdown.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\slowdown.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/resumetime.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\resumetime.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2217,14 +2237,14 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "BigandSlowText",
+      "name": "SlowText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Big and Slow\n\nMakes the snake bigger and slower",
+      "string": "Slo-Mo\n\nSlows down time if \"z\" is pressed\n",
       "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
       "textAlignment": "center",
       "characterSize": 23,
@@ -2247,7 +2267,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Big and Slow\n\nMakes the snake bigger and slower",
+        "text": "Slo-Mo\n\nSlows down time if \"z\" is pressed\n",
         "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -2576,7 +2596,7 @@
     },
     {
       "assetStoreId": "",
-      "name": "BigandSlowButton",
+      "name": "SlowButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2656,7 +2676,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "BigandSlowIcon",
+      "name": "SlowIcon",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4205,7 +4225,7 @@
         "objectName": "PortalsText"
       },
       {
-        "objectName": "BigandSlowText"
+        "objectName": "SlowText"
       },
       {
         "objectName": "GoldenApplesText"
@@ -4223,10 +4243,10 @@
         "objectName": "GoldenApplesIcon"
       },
       {
-        "objectName": "BigandSlowButton"
+        "objectName": "SlowButton"
       },
       {
-        "objectName": "BigandSlowIcon"
+        "objectName": "SlowIcon"
       },
       {
         "objectName": "PortalA1Closed"
@@ -4325,7 +4345,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.1343715797160967,
+        "zoomFactor": 0.8416428125373118,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4497,10 +4517,10 @@
               "name": "PortalsText"
             },
             {
-              "name": "BigandSlowText"
+              "name": "SlowText"
             },
             {
-              "name": "BigandSlowButton"
+              "name": "SlowButton"
             },
             {
               "name": "Banners"
@@ -4510,6 +4530,12 @@
             },
             {
               "name": "GoldenApplesButton"
+            },
+            {
+              "name": "HardPortalsText"
+            },
+            {
+              "name": "HardSlowText"
             }
           ]
         }
@@ -4698,23 +4724,6 @@
           "x": -733,
           "y": -170,
           "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 93,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "PortalsText",
-          "persistentUuid": "ab629740-2d84-4994-94b3-b3897086bb40",
-          "width": 126,
-          "x": -390,
-          "y": 322,
-          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5086,7 +5095,7 @@
           "height": 53,
           "keepRatio": true,
           "layer": "UI",
-          "name": "BigandSlowIcon",
+          "name": "SlowIcon",
           "persistentUuid": "c4d50c41-fe12-41ee-9238-54008bc205f4",
           "width": 53,
           "x": 600,
@@ -5103,29 +5112,12 @@
           "height": 103,
           "keepRatio": true,
           "layer": "UI",
-          "name": "BigandSlowButton",
+          "name": "SlowButton",
           "persistentUuid": "60717fb8-e19d-47a5-9c3e-672581ca402f",
           "width": 106,
           "x": -494,
           "y": 538,
           "zOrder": 42,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 81,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "BigandSlowText",
-          "persistentUuid": "5fbc92ae-4a74-462a-b620-d161c2923b49",
-          "width": 129,
-          "x": -152,
-          "y": 323,
-          "zOrder": 43,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5194,6 +5186,40 @@
           "x": 226,
           "y": -123,
           "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "HardPortalsText",
+          "persistentUuid": "e30c82ba-3984-4cd0-852c-f75d4927e3fc",
+          "width": 92,
+          "x": -374,
+          "y": 338,
+          "zOrder": 49,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "HardSlowText",
+          "persistentUuid": "e5eb0857-c63c-48b7-9284-146ab325a320",
+          "width": 156,
+          "x": -164,
+          "y": 323,
+          "zOrder": 50,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5388,6 +5414,90 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HardPortalsText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Portals\n\nSpawns a wall in the middle and portals around the map",
+          "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+          "textAlignment": "center",
+          "characterSize": 17,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Portals\n\nSpawns a wall in the middle and portals around the map",
+            "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 17,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HardSlowText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Slo-Mo\n\nPermanently slows time \n",
+          "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Slo-Mo\n\nPermanently slows time \n",
+            "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -5395,6 +5505,12 @@
         "children": [
           {
             "objectName": "HardModeSwitch"
+          },
+          {
+            "objectName": "HardSlowText"
+          },
+          {
+            "objectName": "HardPortalsText"
           },
           {
             "objectName": "ControlScreen"
@@ -5448,7 +5564,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "BigandSlowIcon"
+                    "SlowIcon"
                   ]
                 },
                 {
@@ -6449,7 +6565,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowIcon"
+                        "SlowIcon"
                       ]
                     },
                     {
@@ -6569,7 +6685,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowIcon"
+                        "SlowIcon"
                       ]
                     },
                     {
@@ -6836,11 +6952,11 @@
                         "value": "MettreXY"
                       },
                       "parameters": [
-                        "PortalsText",
+                        "HardPortalsText",
                         "=",
-                        "90",
+                        "110",
                         "=",
-                        "212"
+                        "220"
                       ]
                     },
                     {
@@ -6884,11 +7000,11 @@
                         "value": "MettreXY"
                       },
                       "parameters": [
-                        "BigandSlowText",
+                        "HardSlowText",
                         "=",
-                        "500",
+                        "490",
                         "=",
-                        "212"
+                        "220"
                       ]
                     },
                     {
@@ -6896,7 +7012,7 @@
                         "value": "MettreXY"
                       },
                       "parameters": [
-                        "BigandSlowButton",
+                        "SlowButton",
                         "=",
                         "510",
                         "=",
@@ -6922,7 +7038,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "PortalsText"
+                        "HardPortalsText"
                       ]
                     },
                     {
@@ -7150,7 +7266,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowText"
+                        "HardSlowText"
                       ]
                     },
                     {
@@ -7158,7 +7274,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowButton"
+                        "SlowButton"
                       ]
                     },
                     {
@@ -7166,7 +7282,7 @@
                         "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                       },
                       "parameters": [
-                        "BigandSlowButton",
+                        "SlowButton",
                         ""
                       ]
                     }
@@ -7197,7 +7313,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "BigandSlowIcon",
+                        "SlowIcon",
                         ""
                       ]
                     },
@@ -7207,7 +7323,7 @@
                       },
                       "parameters": [
                         "",
-                        "0.5"
+                        "0.75"
                       ]
                     },
                     {
@@ -7239,7 +7355,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowIcon"
+                        "SlowIcon"
                       ]
                     }
                   ],
@@ -7250,7 +7366,7 @@
                       },
                       "parameters": [
                         "",
-                        "0.5"
+                        "0.75"
                       ]
                     }
                   ]
@@ -7269,7 +7385,7 @@
                             "value": "Visible"
                           },
                           "parameters": [
-                            "BigandSlowIcon"
+                            "SlowIcon"
                           ]
                         },
                         {
@@ -9003,7 +9119,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -9011,7 +9127,7 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
+        "snap": true,
         "zoomFactor": 0.7370816317994042,
         "windowMask": false
       },
@@ -9184,10 +9300,10 @@
               "name": "PortalsText"
             },
             {
-              "name": "BigandSlowText"
+              "name": "SlowText"
             },
             {
-              "name": "BigandSlowButton"
+              "name": "SlowButton"
             },
             {
               "name": "Banners"
@@ -9773,7 +9889,7 @@
           "height": 53,
           "keepRatio": true,
           "layer": "UI",
-          "name": "BigandSlowIcon",
+          "name": "SlowIcon",
           "persistentUuid": "c4d50c41-fe12-41ee-9238-54008bc205f4",
           "width": 53,
           "x": 600,
@@ -9790,7 +9906,7 @@
           "height": 103,
           "keepRatio": true,
           "layer": "UI",
-          "name": "BigandSlowButton",
+          "name": "SlowButton",
           "persistentUuid": "60717fb8-e19d-47a5-9c3e-672581ca402f",
           "width": 106,
           "x": -494,
@@ -9807,7 +9923,7 @@
           "height": 81,
           "keepRatio": true,
           "layer": "UI",
-          "name": "BigandSlowText",
+          "name": "SlowText",
           "persistentUuid": "5fbc92ae-4a74-462a-b620-d161c2923b49",
           "width": 129,
           "x": -152,
@@ -9864,6 +9980,23 @@
           "x": -283,
           "y": 322,
           "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 41,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TimeStopCooldown",
+          "persistentUuid": "c30c31f4-d86b-4699-ac9f-be14754f6033",
+          "width": 83,
+          "x": 655,
+          "y": 1,
+          "zOrder": 47,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10047,6 +10180,54 @@
               ]
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TimeStopCooldown",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "TimeStopCoolDown",
+              "type": "number",
+              "value": 10
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0",
+            "font": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -10057,6 +10238,9 @@
           },
           {
             "objectName": "ControlScreen"
+          },
+          {
+            "objectName": "TimeStopCooldown"
           }
         ]
       },
@@ -10104,7 +10288,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "BigandSlowIcon"
+                    "SlowIcon"
                   ]
                 },
                 {
@@ -10174,6 +10358,15 @@
                   },
                   "parameters": [
                     "Portals"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TimeStopCooldown\""
                   ]
                 },
                 {
@@ -11006,7 +11199,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowIcon"
+                        "SlowIcon"
                       ]
                     },
                     {
@@ -11114,7 +11307,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowIcon"
+                        "SlowIcon"
                       ]
                     },
                     {
@@ -11429,7 +11622,7 @@
                         "value": "MettreXY"
                       },
                       "parameters": [
-                        "BigandSlowText",
+                        "SlowText",
                         "=",
                         "500",
                         "=",
@@ -11441,7 +11634,7 @@
                         "value": "MettreXY"
                       },
                       "parameters": [
-                        "BigandSlowButton",
+                        "SlowButton",
                         "=",
                         "510",
                         "=",
@@ -11683,7 +11876,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowText"
+                        "SlowText"
                       ]
                     },
                     {
@@ -11691,7 +11884,7 @@
                         "value": "Visible"
                       },
                       "parameters": [
-                        "BigandSlowButton"
+                        "SlowButton"
                       ]
                     },
                     {
@@ -11699,7 +11892,7 @@
                         "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                       },
                       "parameters": [
-                        "BigandSlowButton",
+                        "SlowButton",
                         ""
                       ]
                     }
@@ -11730,7 +11923,7 @@
                         "value": "Montre"
                       },
                       "parameters": [
-                        "BigandSlowIcon",
+                        "SlowIcon",
                         ""
                       ]
                     },
@@ -11740,7 +11933,7 @@
                       },
                       "parameters": [
                         "",
-                        "0.5"
+                        "1"
                       ]
                     },
                     {
@@ -11763,31 +11956,19 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "BigandSlowIcon"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ChangeTimeScale"
-                      },
-                      "parameters": [
-                        "",
-                        "0.5"
-                      ]
-                    }
-                  ]
-                },
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Slo-mo",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -11799,10 +11980,11 @@
                       "subInstructions": [
                         {
                           "type": {
-                            "value": "Visible"
+                            "value": "KeyFromTextPressed"
                           },
                           "parameters": [
-                            "BigandSlowIcon"
+                            "",
+                            "\"z\""
                           ]
                         },
                         {
@@ -11810,7 +11992,18 @@
                             "value": "Visible"
                           },
                           "parameters": [
-                            "Powerups"
+                            "SlowIcon"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"TimeStopCooldown\"",
+                            ">=",
+                            "10"
                           ]
                         }
                       ]
@@ -11819,11 +12012,72 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\slowdown.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "ChangeTimeScale"
                       },
                       "parameters": [
                         "",
-                        "0"
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "3.75"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeTimeScale"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\resumetime.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"TimeStopCooldown\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "TimeStopCooldown",
+                        "Text",
+                        "=",
+                        "ToString(Variable(TimeStopCoolDown))"
                       ]
                     }
                   ]
@@ -14021,6 +14275,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
